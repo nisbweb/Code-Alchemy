@@ -42,7 +42,7 @@ We’re excited to have you contribute to this project! Follow these steps to ge
 2. Clone Your Forked Repository
 - Clone your fork to your local machine by running:
   ```bash
-  git clone https://github.com/YOUR-USERNAME/REPO-NAME.git
+  git clone git@github.com:nisbweb/Code-Alchemy.git
 3. Create a New Branch
 - Create a new branch for your feature or bug fix:
   ```bash
