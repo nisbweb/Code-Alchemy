@@ -28,7 +28,7 @@ Contribute to actual projects like websites, apps, games and enhance your coding
 - Do NOT remove or make changes in Rules, Readme files, or any other helpful content.
 - You are free to contribute code in any programming language, including but not limited to C++, Java, Python, JavaScript, Go, etc. Diversity is welcome!
 - Before submitting a pull request, please check the repository to ensure that your code or solution does not already exist. Duplicating existing solutions will not be accepted.
-- If a solution to a problem already exists, your PR will only be merged if it has better time complexity/ space complexity
+- If a solution to a problem already exists, your PR will only be merged if it has better time complexity, space complexity
 - Ensure that your pull requests are substantial and contribute meaningfully. Avoid submitting minor changes such as fixing typos or formatting.
 
 
