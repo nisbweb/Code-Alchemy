@@ -1,4 +1,4 @@
-/*
+'''
     1. Array/String Challenge: The first task is to reorganize the fragmented data blocks using array and
     string manipulation. You need to scan through the memory sectors and arrange them in the correct
     order to ensure efficient data retrieval.
@@ -21,8 +21,9 @@
 
     Output:
     This is a Memory Sector
+'''
 
-*/
 
 
-// WRITE YOUR CODE HERE
+
+# WRITE YOUR CODE HERE
