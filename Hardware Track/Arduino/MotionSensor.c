@@ -9,3 +9,5 @@
     Output:
     Alarm triggered (sound or light) and notification sent to the serial monitor.
 */
+
+// WRITE YOUR CODE HERE
