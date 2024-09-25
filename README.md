@@ -75,7 +75,7 @@ Keep your branch name descriptive of the feature or fix you’re working on.
 
 
 
-## Thanks to all our contributors
+## Thanks to all our contributors ✨
 
 <img src = "https://contrib.rocks/image?repo=nisbweb/Code-Alchemy"/>
 
