@@ -1,3 +1,11 @@
+# Contribution Guidelines
+
+- **Respectful Collaboration**: Be respectful and constructive in your interactions.
+- **Coding Standards**: Follow the established code style (check `.prettierrc` or `.eslintrc`). Use clear variable and function names.
+- **Commit Messages**: Write concise, clear, and meaningful commit messages. 
+- **Pull Requests**: Submit small, focused pull requests that solve a single issue or add a single feature. 
+
+
 # How to Contribute
 
 We’re excited to have you contribute to this project! Follow these steps to get started:
