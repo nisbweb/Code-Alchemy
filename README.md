@@ -72,3 +72,12 @@ Keep your branch name descriptive of the feature or fix you’re working on.
 - Once approved, your changes will be merged into the main branch!
 
 ## Resources
+
+
+
+## Thanks to all our contributors
+
+<img src = "https://contrib.rocks/image?repo=nisbweb/Code-Alchemy"/>
+
+Happy hacking!!!
+
