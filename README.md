@@ -24,7 +24,6 @@ Contribute to actual projects like websites, apps, games and enhance your coding
 
 ## Rules
 - Pull requests that don't follow the rules won't be merged.
-- AI generated code will not be merged.
 - Do NOT remove or make changes in Rules, Readme files, or any other helpful content.
 - Do NOT make any changes in questions.
 - You are free to contribute code in any programming language, including but not limited to C++, Java, Python, JavaScript, Go, etc. Diversity is welcome!
