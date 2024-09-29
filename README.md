@@ -36,7 +36,7 @@ Contribute to actual projects like websites, apps, games and enhance your coding
 Refer CONTRIBUTING.md
 
 ## Resources
-
+[How to create a pull request](https://www.youtube.com/watch?v=jRLGobWwA3Y)
 
 
 ## Thanks to all our contributors ✨
