@@ -21,6 +21,14 @@ This track helps you level up your coding skills through fun and simple puzzles 
 Contribute to actual projects like websites, apps, games and enhance your coding skills!
 
 
+## How to Contribute
+Refer CONTRIBUTING.md
+
+## Resources
+[How to create a pull request](https://www.youtube.com/watch?v=jRLGobWwA3Y)\
+[Learn more about hacktoberfest2024! and register here](https://hacktoberfest.com/)\
+[Everything you need to know about hacktoberfest](https://dev.to/jfmartinz/hacktoberfest-2024-everything-you-need-to-know-29h7)
+
 
 ## Rules
 - Pull requests that don't follow the rules won't be merged.
@@ -30,16 +38,6 @@ Contribute to actual projects like websites, apps, games and enhance your coding
 - Before submitting a pull request, please check the repository to ensure that your code or solution does not already exist. Duplicating existing solutions will not be accepted.
 - If a solution to a problem already exists, your PR will only be merged if it has better time complexity, space complexity
 - Ensure that your pull requests are substantial and contribute meaningfully. Avoid submitting minor changes such as fixing typos or formatting.
-
-
-## How to Contribute
-Refer CONTRIBUTING.md
-
-## Resources
-[How to create a pull request](https://www.youtube.com/watch?v=jRLGobWwA3Y)\
-[Learn more about hacktoberfest2024! and register here](https://hacktoberfest.com/)\
-[Everything you need to know about hacktoberfest](https://dev.to/jfmartinz/hacktoberfest-2024-everything-you-need-to-know-29h7)
-
 
 
 
