@@ -38,7 +38,7 @@ Refer CONTRIBUTING.md
 ## Resources
 [How to create a pull request](https://www.youtube.com/watch?v=jRLGobWwA3Y)\
 [Learn more about hacktoberfest2024! and register here](https://hacktoberfest.com/)\
-[Everything you need to know about hacktoberfest](https://dev.to/jfmartinz/hacktoberfest-2024-everything-you-need-to-know-29h7)\
+[Everything you need to know about hacktoberfest](https://dev.to/jfmartinz/hacktoberfest-2024-everything-you-need-to-know-29h7)
 
 
 
