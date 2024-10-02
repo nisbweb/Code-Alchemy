@@ -42,7 +42,7 @@ Refer CONTRIBUTING.md
 
 
 ## Thanks to all our contributors ✨
-<img src = "https://contrib.rocks/image?repo=nisbweb/Code-Alchemy" width="350" height="250"/> 
+<img src = "https://contrib.rocks/image?repo=nisbweb/Code-Alchemy"/> 
 
 
 Happy hacking!!!
