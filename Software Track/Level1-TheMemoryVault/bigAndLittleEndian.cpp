@@ -1,5 +1,5 @@
 /*
-    A corrupted memory dump has been retrieved in **big-endian** format, but the system you're working with processes memory in **little-endian** format. 
+    A corrupted memory dump has been retrieved in big-endian format, but the system you're working with processes memory in little-endian format. 
     Your task is to convert an array of 32-bit hexadecimal values from big-endian to little-endian.
 
     Given an array of 32-bit hex values (in string format), convert each value from big-endian to little-endian.
