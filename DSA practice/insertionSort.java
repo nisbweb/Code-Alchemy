@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class insertionSort {
     public static int[] isort(int[] n) {
@@ -24,6 +25,6 @@ public class insertionSort {
         for (int i = 0; i < arr.length; i++) {
             arr[i]=in.nextInt();
         }
-        System.out.println("Sorted array: "+ isort(arr));
+        System.out.println("Sorted array: "+ Arrays.toString(isort(arr)));
     }
 }
