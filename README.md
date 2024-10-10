@@ -40,6 +40,11 @@ Refer CONTRIBUTING.md
 - Ensure that your pull requests are substantial and contribute meaningfully. Avoid submitting minor changes such as fixing typos or formatting.
 
 
+## Thanks to all our contributors ✨
+<img src = "https://contrib.rocks/image?repo=nisbweb/Code-Alchemy"/>
+
+
+Happy hacking!!!
 
 
 
