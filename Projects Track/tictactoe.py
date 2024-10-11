@@ -1,3 +1,6 @@
+'''
+Create a simple Tic-Tac-Toe game
+'''
 # Importing packages from tkinter
 from tkinter import *
 from tkinter import messagebox 
