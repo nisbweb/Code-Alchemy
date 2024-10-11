@@ -44,6 +44,6 @@ public class rotateArray {
         }
         System.out.println("Enter the value of K");
         int k=in.nextInt();
-        System.out.println(rotateArrayFromK(arr, k));
+        System.out.println(Arrays.toString(rotateArrayFromK(arr, k)));
     }
 }
