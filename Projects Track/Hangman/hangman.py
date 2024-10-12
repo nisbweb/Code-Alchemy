@@ -1,8 +1,6 @@
 import random
 import os
 
-
-# Function to load words from a text file
 def load_words(filename):
     if os.path.exists(filename):
         with open(filename, 'r') as file:
@@ -12,8 +10,6 @@ def load_words(filename):
         print(f"{filename} not found!")
         return []
 
-
-# Function to select a random word from the list
 def choose_word(category):
     if category == 'animals':
         words = load_words('animals.txt')
@@ -27,14 +23,12 @@ def choose_word(category):
         return random.choice(words)
     return None
 
-
 # Function to display the current state of the word
 def display_word(word, guessed_letters):
     display = [letter if letter in guessed_letters else '_' for letter in word]
     return ' '.join(display)
 
-
-# Function to run the Hangman game
+# Driver Function to run the Hangman game
 def hangman():
     print("Welcome to Hangman!")
     category = input("Choose a category (animals/movies): ").lower()
