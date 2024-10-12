@@ -30,7 +30,10 @@ public class reverseWords {
         String[] words=s.split(" ");
         String out="";
         for (int i = words.length-1; i >= 0 ; i--) {
-            out=out+words[i]+" ";
+            out=out+words[i];
+            if (i!=0) {
+                out=out+" ";
+            }
         } 
         return out;
     }
