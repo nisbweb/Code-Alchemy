@@ -66,19 +66,16 @@ void toMorse(char A){
       Ac++;
 		delay(500);
     }
-    delay(1500);
 }
 
 void Dot(){
     digitalWrite(led, HIGH);
   delay(500);
   digitalWrite(led, LOW);
-  delay(500); 
 }
 
 void Dash() {
   digitalWrite(led, HIGH);
   delay(1500);
-  digitalWrite(led, LOW);
-  delay(1500); // Space between symbols
+  digitalWrite(led, LOW); // Space between symbols
 }

@@ -12,7 +12,7 @@ third is optional, it would specify the order of sorting
 using namespace std;
 
 
-int bubbleSort(int arr[],int size){
+void bubbleSort(int arr[],int size){
         
         for (int i = 0; i < size-1 ; i++)//for number of passes
         {
@@ -29,7 +29,6 @@ int bubbleSort(int arr[],int size){
             }
             
         }
-        
 }
 
 
@@ -48,7 +47,7 @@ then it will sort the given array in the decending order
 else...it will just terminate the code with a proper message..ig
 */
 
-int bubbleSort(int arr[],int size,char order){
+void bubbleSort(int arr[],int size,char order){
         
         if(order=='a'){
             for (int i = 0; i < size-1 ; i++)//for number of passes
@@ -84,13 +83,13 @@ int bubbleSort(int arr[],int size,char order){
             
         }
     }
-
-        else{
+         else{
             cout<<endl;
             cout<<"please specify a coherent order parameter";
             exit(0);
         }
       
+
 }
 
 
@@ -110,7 +109,7 @@ int main(){
 
     int test_arr[5]={4,1,7,4,2};
     print_arr(test_arr);
-    bubbleSort(test_arr,5,'f');
+    bubbleSort(test_arr,5,'a');
     cout<<endl;
     print_arr(test_arr);
     cout<<endl;
