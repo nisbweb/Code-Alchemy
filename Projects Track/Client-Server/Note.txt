@@ -1,0 +1,5 @@
+Hey! So, for this project, we're going to set up a client-server program.
+ We’ll need to create both a server and a client. 
+ The cool part is that the server will be able to handle multiple clients at the same time! 
+ Its main job will be to receive messages from the clients and simply let them know that their messages have been received. 
+ Give it a try , Hope it will be fun lesson of netwroks :) !!!
