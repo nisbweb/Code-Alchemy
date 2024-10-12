@@ -20,6 +20,10 @@ dot=1 unit
 dash=3 unit
 delay b/w dots and dashes =1 unit
 delay b/w diffrent letters=3 units
+delay b/w diffrent words=7 units
+
+!!the below code can read letters, numbers and spaces.. each of which is represented by its respective morse code;
+
 
 */
 
@@ -51,11 +55,19 @@ const char *morse[]={
  ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", 
   "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", 
   "..-", "...-", ".--", "-..-", "-.--", "--..", // A-Z
+  
+  "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----." // 0-9
 };
 
 void toMorse(char A){
+ 
+  const char *Ac;
+   if(isdigit(A)){  Ac=morse[A-'0'+26] ;}
+   if(isalpha(A)){  Ac=morse[A-'A'] ;}
+   if(A==' '){delay(3500);return;}
 
-    const char *Ac=morse[A-'A'] ;
+
+
 
      while (*Ac) {
       if (*Ac == '.') {
@@ -66,6 +78,7 @@ void toMorse(char A){
       Ac++;
 		delay(500);
     }
+    delay(1500);
 }
 
 void Dot(){
