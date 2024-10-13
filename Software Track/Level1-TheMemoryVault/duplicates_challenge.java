@@ -36,23 +36,6 @@ public class duplicates_challenge {
         }
         return out.stream().mapToInt(Integer::intValue).toArray();
     }
-    public static boolean contains(int[] arr, int num) {
-        int max=arr.length-1;
-        int min=0;
-        arr=sort(arr);
-        while (min<=max) {
-            int mid=min+(max-min)/2;
-            if (arr[mid]==num) {
-                return true;
-            }
-            if (arr[mid]>num) {
-                max-=1;
-            } else {
-                min+=1;
-            }
-        }
-        return false;
-    }
     public static int[] sort(int[] n) {
         int temp,j;
         for (int i = 0; i < n.length; i++) {
