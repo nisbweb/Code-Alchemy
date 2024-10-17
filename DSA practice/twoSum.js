@@ -9,6 +9,9 @@
 //Sample Output:
 // 0 2
 
+let nums=[2,4,5,9,8];
+let target = 7;
+
 function twoSum(nums, target) {
     let store = new Map();
     for(let j=0;j<nums.length;j++){
@@ -21,3 +24,4 @@ function twoSum(nums, target) {
     }
     return [0,0];
 }
+console.log(twoSum(nums, target));
