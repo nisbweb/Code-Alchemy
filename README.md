@@ -22,6 +22,7 @@ Contribute to actual projects like websites, apps, games and enhance your coding
 
 
 ## How to Contribute
+Make sure you register for hacktoberfest at [https://hacktoberfest.com/](https://hacktoberfest.com/\
 Refer CONTRIBUTING.md
 
 ## Resources
