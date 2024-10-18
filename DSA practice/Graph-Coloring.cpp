@@ -1,3 +1,8 @@
+/*
+    This implementation checks if a graph can be colored using m colors such that no two adjacent vertices have the same color. 
+    It uses backtracking to explore possible color assignments.
+*/
+
 #include <iostream>
 #include <vector>
 using namespace std;
