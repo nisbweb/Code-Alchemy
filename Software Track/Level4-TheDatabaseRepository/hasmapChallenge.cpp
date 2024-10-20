@@ -67,7 +67,8 @@ vector<vector<string>> entries = {
     }
     for(auto i:mp)
     {
-       cout<<i.first<<":"<<i.second;
+       cout<<i.first<<":"<<i.second<<endl;
+
 
     }
 
