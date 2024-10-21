@@ -44,7 +44,7 @@
 
 using namespace std;
 
-vector<int> dijkstra(int n, vector<pair<int, int>> adj[], int source, int target) {
+pair<vector<int>, int> dijkstra(int n, vector<pair<int, int>> adj[], int source, int target) {
     vector<int> dist(n, INT_MAX);
     vector<int> parent(n, -1);
     dist[source] = 0;
@@ -78,7 +78,7 @@ vector<int> dijkstra(int n, vector<pair<int, int>> adj[], int source, int target
         return {};
     }
 
-    return path;
+    return {path, dist[target]};
 }
 
 void remove_cycles(int u, vector<pair<int, int>> adj[], vector<bool> &visited, set<pair<int, int>> &edges) {
@@ -88,13 +88,55 @@ void remove_cycles(int u, vector<pair<int, int>> adj[], vector<bool> &visited, s
         int v = edge.first;
         if (visited[v]) {
             edges.erase(minmax(u, v));
-        } else {
+        }
+        else {
             remove_cycles(v, adj, visited, edges);
         }
     }
 }
 
 int main() {
-    // Your code here
+    int n = 6;
+    vector<pair<int, int>> adj[6];
+    vector<tuple<int, int, int>> edges = {
+        {0, 1, 4}, {0, 2, 1}, {1, 2, 2}, {1, 3, 5},
+        {2, 3, 8}, {3, 4, 3}, {4, 5, 7}
+    };
+
+    for (auto edge : edges) {
+        int u, v, w;
+        tie(u, v, w) = edge;
+        adj[u].push_back({v, w});
+        adj[v].push_back({u, w});
+    }
+
+    int source = 0;
+    int target = 5;
+
+    set<pair<int, int>> edges_set;
+    for (auto edge : edges) {
+        int u, v, w;
+        tie(u, v, w) = edge;
+        edges_set.insert(minmax(u, v));
+    }
+
+    vector<bool> visited(n, false);
+    remove_cycles(source, adj, visited, edges_set);
+
+    auto result = dijkstra(n, adj, source, target);
+    vector<int> shortest_path = result.first;
+    int total_cost = result.second;
+
+    if (shortest_path.empty()) {
+        cout << "No path found from " << source << " to " << target << endl;
+    }
+    else {
+        cout << "Shortest path: ";
+        for (int node : shortest_path) {
+            cout << node << " ";
+        }
+        cout << endl;
+        cout << "Total cost: " << total_cost << endl;
+    }
     return 0;
 }
