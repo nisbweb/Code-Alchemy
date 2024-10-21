@@ -13,6 +13,8 @@
 //     Output:
 //     4
 
+let n=10;
+
 function isPrime(num) {
   for (let f = 2; f * f <= num; f++) {
     if (num % f === 0) {
