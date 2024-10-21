@@ -41,6 +41,7 @@
 // WRITE YOUR CODE HERE
 
 #include <bits/stdc++.h>
+
 using namespace std;
 
 vector<int> dijkstra(int n, vector<pair<int, int>> adj[], int source, int target) {
@@ -78,4 +79,22 @@ vector<int> dijkstra(int n, vector<pair<int, int>> adj[], int source, int target
     }
 
     return path;
+}
+
+void remove_cycles(int u, vector<pair<int, int>> adj[], vector<bool> &visited, set<pair<int, int>> &edges) {
+    visited[u] = true;
+
+    for (auto edge : adj[u]) {
+        int v = edge.first;
+        if (visited[v]) {
+            edges.erase(minmax(u, v));
+        } else {
+            remove_cycles(v, adj, visited, edges);
+        }
+    }
+}
+
+int main() {
+    // Your code here
+    return 0;
 }
