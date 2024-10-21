@@ -39,3 +39,43 @@
 */
 
 // WRITE YOUR CODE HERE
+
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> dijkstra(int n, vector<pair<int, int>> adj[], int source, int target) {
+    vector<int> dist(n, INT_MAX);
+    vector<int> parent(n, -1);
+    dist[source] = 0;
+
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+    pq.push({0, source});
+
+    while (!pq.empty()) {
+        int u = pq.top().second;
+        pq.pop();
+
+        for (auto edge : adj[u]) {
+            int v = edge.first;
+            int weight = edge.second;
+
+            if (dist[u] + weight < dist[v]) {
+                dist[v] = dist[u] + weight;
+                parent[v] = u;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+
+    vector<int> path;
+    for (int v = target; v != -1; v = parent[v]) {
+        path.push_back(v);
+    }
+    reverse(path.begin(), path.end());
+
+    if (path[0] != source) {
+        return {};
+    }
+
+    return path;
+}
