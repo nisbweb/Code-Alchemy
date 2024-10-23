@@ -35,7 +35,7 @@
 
     Output
     Shortest Path: [0, 2, 1, 3, 4, 5]
-    Total Cost: 21
+    Total Cost: 18
 */
 
 // WRITE YOUR CODE HERE
