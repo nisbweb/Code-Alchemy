@@ -40,3 +40,42 @@
 
 // WRITE YOUR CODE HERE
 
+
+#include<iostream>
+#include<bits/stdc++.h>
+
+
+using namespace std;
+
+int  main()
+{
+
+vector<vector<string>> entries = {
+        {"user1", "dataA"},
+        {"user2", "dataB"},
+        {"user1", "dataC"},
+        {"user3", "dataD"},
+        {"user2", "dataE"}
+    };
+
+    map<string,string>mp;
+    for(int i=0;i<entries.size();i++)
+    {
+          mp[entries[i][0]]=entries[i][1];
+
+        
+    }
+    for(auto i:mp)
+    {
+       cout<<i.first<<":"<<i.second<<endl;
+
+
+    }
+
+
+    return 0;
+}
+
+
+
+
