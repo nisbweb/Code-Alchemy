@@ -12,12 +12,11 @@ class Stack {
       arr = new int[size];
     }
   void push(int x) {
-    top++;
     if (top >= size - 1) { 
             cout << "Stack Overflow! Cannot push " << x << endl;
             return;
     }
-    arr[top] = x;
+    arr[++top] = x;
   }
   int pop() {
     if (top < 0) { 
