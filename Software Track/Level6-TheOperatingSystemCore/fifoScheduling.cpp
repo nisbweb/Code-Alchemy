@@ -34,3 +34,32 @@
 
 
 // WRITE YOUR CODE HERE
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+double calculateAverageWaitingTime(int n, const vector<pair<int, int>> &processes) {
+    int totalWaitingTime = 0;
+    int waitingTime = 0;
+
+    for (int i = 1; i < n; ++i) {
+       
+        waitingTime += processes[i - 1].second;
+        totalWaitingTime += waitingTime;
+    }
+
+    
+    return static_cast<double>(totalWaitingTime) / n;
+}
+
+int main() {
+    int n = 4;
+    vector<pair<int, int>> processes = {{1, 3}, {2, 2}, {3, 4}, {4, 5}};
+    
+    double avgWaitingTime = calculateAverageWaitingTime(n, processes);
+    cout << "Average Waiting Time: " << avgWaitingTime << endl; 
+
+    return 0;
+}
