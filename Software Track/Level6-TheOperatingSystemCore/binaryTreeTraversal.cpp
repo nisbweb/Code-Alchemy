@@ -22,18 +22,32 @@ struct Node {
     string name;
     Node* left;
     Node* right;
+
+    Node(string n) : name(n), left(NULL), right(NULL) {}
 };
 
-string preorder(){
-    // WRITE YOUR CODE HERE
+string preorder(Node* root) {
+    if (root == nullptr) return "";
+    string res = root->name + " ";
+    res += preorder(root->left);
+    res += preorder(root->right);
+    return res;
 }
 
-string inorder(){
-    // WRITE YOUR CODE HERE
+string inorder(Node* root) {
+    if (root == nullptr) return "";
+    string res = inorder(root->left);
+    res += root->name + " ";
+    res += inorder(root->right);
+    return res;
 }
 
-string postorder(){
-    // WRITE YOUR CODE HERE
+string postorder(Node* root) {
+    if (root == nullptr) return "";
+    string res = postorder(root->left);
+    res += postorder(root->right);
+    res += root->name + " ";
+    return res;
 }
 
 
@@ -46,6 +60,12 @@ int main(){
     root->left->left = new Node("Photos");
     root->left->right = new Node("Downloads");
 
-    // WRITE YOUR CODE HERE
+    string res_preorder = preorder(root);
+    string res_inorder = inorder(root);
+    string res_postorder = postorder(root);
+    cout << "Pre-order Traversal: " << res_preorder << endl;
+    cout << "In-order Traversal: " << res_inorder << endl;
+    cout << "Post-order Traversal: " << res_postorder << endl;
 
+    return 0;
 }
