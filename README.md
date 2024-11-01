@@ -22,6 +22,7 @@ Contribute to actual projects like websites, apps, games and enhance your coding
 
 
 ## How to Contribute
+Make sure you register for hacktoberfest at https://hacktoberfest.com/ \
 Refer CONTRIBUTING.md
 
 ## Resources
@@ -42,8 +43,9 @@ Refer CONTRIBUTING.md
 
 
 ## Thanks to all our contributors ✨
-<img src = "https://contrib.rocks/image?repo=nisbweb/Code-Alchemy"/> 
+<img src="https://contrib.rocks/image?repo=nisbweb/Code-Alchemy" />
 
 
 Happy hacking!!!
+
 
